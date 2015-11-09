@@ -2,20 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Marvelous Message Board</title>
 
     <link rel="stylesheet" href="../assets/scripts/style.css">
-    <link rel="stylesheet" href="../vendors/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="../vendors/bootstrap.min.css">-->
     <script type="text/javascript" src="../vendors/jquery.min.js"></script>
     <script type="text/javascript" src="../assets/scripts/app.js"></script>
 </head>
 <body>
+ <div id="mainContainer">
+    <h1>Message Board</h1>
     <form id="messageInput">
-        <input type="text" id="name" name="name" placeholder="Enter Name:">
-        <textarea type="text" maxlength="5000" class="message" id="message" name="message" placeholder="Enter Message:"></textarea>
-        <button id="submitAdd" class="btn btn-info">Submit Message</button>
+        <textarea type="text" maxlength="50" class="name" id="name" name="name" placeholder="Enter Name:"></textarea>
+        <textarea type="text" maxlength="500" class="message" id="message" name="message" placeholder="Enter Message: (5,000 character max)"></textarea>
+        <button id="submitAdd" class="button">Submit Message</button>
     </form>
+ </div>
 
-    <div id="messageContainer"></div>
+    <div id="messageContainer" class="clearfix"></div>
+
+
 </body>
 </html>

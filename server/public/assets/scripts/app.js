@@ -52,9 +52,9 @@ function updateDOM(data){
    $("#messageContainer").empty();
 
    for(var i = 0; i < data.length; i++){
-      var el = "<div class='well col-md-6'>" +
-          "<p>" + data[i].message + "</p>" +
-          "<p2>" + data[i].name + "</p>" +
+      var el = "<div class='messagePost'>" +
+          "<p class='messageTag'>" + "\"" + data[i].message + "\"" + "</p>" +
+          "<p class='nameTag'>" +  "-" + data[i].name + "</p>" +
           //"<button class='delete btn btn-danger' data-id='" +
           //data[i].id + "'>Delete</button>" +
           "</div>";
