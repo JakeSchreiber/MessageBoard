@@ -49,6 +49,8 @@ function addMessage(){
 }
 
 function updateDOM(data){
+
+   $("#messageInput").find("textarea[type=text]").val("");
    $("#messageContainer").empty();
 
    for(var i = 0; i < data.length; i++){

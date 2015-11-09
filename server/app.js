@@ -4,8 +4,8 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var pg = require('pg');
 
-var connectionString = process.env.DATABASE_URL || 'postgres://veiistpfvugvhx:QBAvtJqDHRTvfxZzakBe06ATbU@ec2-54-204-6-113.compute-1.amazonaws.com:5432/dimrt7lf6rut9';
-//var connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/message_board';
+//var connectionString = process.env.DATABASE_URL || 'postgres://veiistpfvugvhx:QBAvtJqDHRTvfxZzakBe06ATbU@ec2-54-204-6-113.compute-1.amazonaws.com:5432/dimrt7lf6rut9';
+var connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/message_board';
 
 
 app.use(bodyParser.json());
